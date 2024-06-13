@@ -27,6 +27,7 @@ Timeout.prototype.unref = function() {
     this.unreffed = true
     this.timeout.unref()
   }
+  return this
 }
 
 Timeout.prototype.ref = function() {
@@ -34,6 +35,7 @@ Timeout.prototype.ref = function() {
     this.unreffed = false
     this.timeout.ref()
   }
+  return this
 }
 
 Timeout.prototype.start = function() {
@@ -67,6 +69,7 @@ Interval.prototype.unref = function() {
     this.unreffed = true
     this.timeout.unref()
   }
+  return this
 }
 
 Interval.prototype.ref = function() {
@@ -74,6 +77,7 @@ Interval.prototype.ref = function() {
     this.unreffed = false
     this.timeout.ref()
   }
+  return this
 }
 
 Interval.prototype.start = function() {
